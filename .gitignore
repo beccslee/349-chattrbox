@@ -1,1 +1,5 @@
 node_modules
+.cache
+.DS_Store
+app/.DS_Store
+app/scripts/.DS_Store

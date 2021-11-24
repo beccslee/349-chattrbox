@@ -1,73 +1,63 @@
-html, body {
-  height: 100%;
-}
 
-body {
-  padding-bottom: 10px
-}
+      .chat-wrapper {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+      }
+      .chat-messages {
+        flex: 3;
+        overflow-y: auto;
+      }
+      ul, ul.panel-body {
+          margin: 0;
+          padding: 0;
+      }
 
-.chat-wrapper {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-}
-.chat-messages {
-  flex: 3;
-  overflow-y: auto;
-}
+      .odd {
+        background: #eee;
+      }
 
-ul, ul.panel-body {
-  margin: 0;
-  padding: 0;
-}
+      .message-row {
+          list-style-type: none;
+          padding: 4px 12px;
+          display: flex;
+      }
+      .message-row img {
+        padding-right: 1em;
+        /* flex: auto; */
+        border-radius: 15px;
+      }
+      .message-row p {
+        flex: auto;
+      }
 
-.odd {
-  background: #eee;
-}
+      .me {
+        flex-direction: row-reverse;
+        /* justify-content: flex-end; */
+      }
 
-.message-row {
-  list-style-type: none;
-  padding: 4px 12px;
-  display: flex;
-}
+      .me img{
+        padding-right: 0;
+        padding-left: 1em;
+      }
 
-.message-row img {
-  padding-right: 1em;
-  /* flex: auto; */
-  border-radius: 15px;
-}
+      .me p {
+        text-align: right;
+      }
 
-.message-row p {
-  /* flex: auto; */
-}
+      .message-username {
+        font-weight: bold;
+      }
+      .message-message {
+        display: block;
+      }
 
-.me {
-  /* justify-content: flex-end; */
-  flex-direction: row-reverse;      }
+      .message-username + .timestamp {
+        padding-left: 8px;
+      }
 
-.me img{
-  padding-right: 0;
-  padding-left: 1em;
-}
-
-.me p {
-  text-align: right;
-}
-
-.message-username {
-  font-weight: bold;
-}
-
-.message-message {
-  display: block;
-}
-
-.message-username + .timestamp {
-  padding-left: 8px;
-}
-
-.timestamp {
-  font-style: italic;
-  /*        display: block; */
-}
+      .timestamp {
+        font-style: italic;
+        display: block;
+      }
 
